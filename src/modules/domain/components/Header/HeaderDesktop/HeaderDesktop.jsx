@@ -4,7 +4,7 @@ import './HeaderDesktop.module.scss';
 const HeaderDesktop = () => {
     return(
         <>
-            <div>Header Desktop</div>
+            <div>Header desktop</div>
         </>
     );
 };
