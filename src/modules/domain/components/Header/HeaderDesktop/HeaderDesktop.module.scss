@@ -1,11 +1,50 @@
-.Header{
-    
-}
+@import '../../../../../styles/font-sizes';
+@import '../../../../../styles/colors';
+
 .Container{
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-    height: calc(10vh);
-    
+    height: calc(15vh); 
+    background-color: $white;
+    color: $black;
+
+    &_beginBox{
+        text-align: center;
+        font-size: $font-size-xlarge-32;
+        font-weight: 800;
+        width: 15%;
+    }
+    &_centerBox{
+        font-size: $font-size-xmedium-18;
+        width: 50%;
+        .List{
+            display: flex;
+            list-style: none;
+            li{
+                margin-right: 5%;
+            }   
+        }
+    }
+    &_endBox{
+        font-size: $font-size-xmedium-18;
+        width: 25%;
+        
+        &_divider{
+            text-align: center;
+            width: 16%;
+            color: $brown;
+            font-size: $font-size-xlarge-24;
+        }
+
+        .SwitchButton{
+            
+        }
+    }
+    .List a:focus{
+        text-underline-offset: 4px;
+        text-decoration-color: $brown;
+        text-decoration: underline 1.8px solid $brown;
+    }
 }
