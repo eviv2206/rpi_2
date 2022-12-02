@@ -1,10 +1,15 @@
 import React from 'react';
-import './HeaderDesktop.module.scss';
+import s from './HeaderDesktop.module.scss';
 
 const HeaderDesktop = () => {
     return(
         <>
-            <div>header Desktop</div>
+            <div className={s.Header}>
+                <div className={s.Container}>
+                    <div>menu</div>
+                    <div>signIN</div>
+                </div>
+            </div>
         </>
     );
 };
