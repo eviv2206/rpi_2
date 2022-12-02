@@ -1,0 +1,30 @@
+@import '../../../../../styles/font-sizes';
+@import '../../../../../styles/colors';
+.Container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    align-self: center;
+    height: calc(15vh); 
+    background-color: $white;
+    color: $black;
+    width: 100%;
+
+    &_beginBox{
+        text-align: center;
+        font-size: $font-size-medium-16;
+        font-weight: 600;
+        width: 15%;
+    }
+
+    &_endBox{
+        padding-right: 5%;
+        display: flex;
+        justify-content: right;       
+        font-size: $font-size-xmedium-18;
+        width: 85%;
+        .SwitchButton{
+            margin-right: 3%;
+        }
+    }
+}
