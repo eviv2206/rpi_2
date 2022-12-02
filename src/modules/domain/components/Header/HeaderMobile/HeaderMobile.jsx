@@ -1,11 +1,14 @@
 import React from 'react';
 //import classNames from 'classnames';
+<<<<<<< HEAD
 import { Nav, Navbar } from 'react-bootstrap';
 //import '../../../../../styles/font-sizes';
 //import c from '../../../../../styles/_colors.scss';
 //import HeaderMobileMenu from './HeaderMobileMenu';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+>>>>>>> 9fee108 (feat: desktop header v1)
 import s from './HeaderMobile.module.scss';
 
 const HeaderMobile = () => {
