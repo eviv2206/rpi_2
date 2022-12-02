@@ -5,10 +5,10 @@ on:
   # but only for the main branch
   push:
     branches:
-      - develop
+      - master
   pull_request:
     branches:
-      - develop
+      - master
 
 jobs:
   run-linters:
