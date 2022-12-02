@@ -1,8 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import classNames from 'classnames';
-=======
->>>>>>> fbf2cf5 (feat: desktop header divide)
+import classNames from 'classnames';
 import s from './HeaderDesktop.module.scss';
 
 const HeaderDesktop = () => {
