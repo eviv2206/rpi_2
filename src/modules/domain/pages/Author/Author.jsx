@@ -1,8 +1,11 @@
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
 const Author = () => {
+    const author = useLocation().state.author;
     return(
         <>
-            <div>Author page</div>
-            <div>Author page</div>
+            <div>{author.surname}</div>
             <div>Author page</div>
             <div>Author page</div>
             <div>Author page</div>
@@ -11,5 +14,6 @@ const Author = () => {
         </>
     );
 };
+
 
 export default Author;
