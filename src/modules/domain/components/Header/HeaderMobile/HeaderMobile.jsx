@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 =======
 >>>>>>> 9fee108 (feat: desktop header v1)
 import s from './HeaderMobile.module.scss';
+import HeaderMobileMenu from './HeaderMobileMenu';
 
 const HeaderMobile = () => {
     return(
