@@ -1,24 +1,26 @@
 import React from 'react';
-import s from './HeaderMobileMenu.module.scss';
 import { slide as Menu } from 'react-burger-menu';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
-export default HeaderMobileMenu = () => {
-    return(
+
+
+const HeaderMobileMenu = () => {
+    return (
         <>
             <Menu>
-                <a className='menu-item' href="/">
-                    Home
-                </a>
-                <a className='menu-item' href="/salads">
-                    Salads
-                </a>
-                <a className='menu-item' href="/pizzas">
-                    Pizzas
-                </a>
-                <a className='menu-item' href="/desserts">
-                    Desserts
-                </a>
+                <Form className="d-flex">
+                    <Form.Control
+                        type="search"
+                        placeholder="Search"
+                        className="me-2"
+                        aria-label="Search"
+                    />
+                    <Button variant="outline-success">Search</Button>
+                </Form>
             </Menu>
         </>
-    )
-}
+    );
+};
+
+export default HeaderMobileMenu;
