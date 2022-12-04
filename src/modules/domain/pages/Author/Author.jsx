@@ -4,7 +4,6 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { Map, Placemark, YMaps } from '@pbe/react-yandex-maps';
 import YouTube from 'react-youtube';
-import s from './Author.module.scss';
 import color from '../../../../styles/_colors.scss';
 
 const Author = () => {
