@@ -2,18 +2,29 @@ import React from 'react';
 import classNames from 'classnames';
 import classNames from 'classnames';
 import s from './HeaderDesktop.module.scss';
+import HEADER_DICTIONARY from '../Header.dictionary';
+import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import search from '../../../../../assets/images/search.svg';
+
+const {
+    LABEL_LOGO,
+    LABEL_MAIN,
+    LABEL_LIST_AUTHORS,
+    LABEL_INPUT_SURNAME,
+} = HEADER_DICTIONARY;
 
 const HeaderDesktop = () => {
     return(
         <>
-            <div className={s.Header}>
+            <div>
                 <div className={s.Container}>
-                    <div className={s.Container_beginBox}><a>HEADER</a></div>
+                    <div className={s.Container_beginBox}><Link to='/domain'>{LABEL_LOGO}</Link></div>
                     <div className={s.Container_centerBox}>
                         <ul className={s.List}>
-                            <li><a href='#'>Button 1</a></li>
-                            <li><a href='#'>Button 2</a></li>
-                            <li><a href='#'>Button 3</a></li>
+                            <li><Link to='/domain'>{LABEL_MAIN}</Link></li>
+                            <li><a href='#'>{LABEL_LIST_AUTHORS}</a></li>
                         </ul>
                     </div>
                     <div className={
@@ -22,9 +33,17 @@ const HeaderDesktop = () => {
                             s.Container
                         )
                     }>
-                        <div><a href='#'>+375 (00) 000 00 00</a></div>
-                        <div className={s.Container_endBox_divider}>|</div>
-                        <div className={s.SwitchButton}><a href='#'>but</a></div>
+                        <Form className="d-flex">
+                            <Form.Control
+                                type="search"
+                                placeholder={LABEL_INPUT_SURNAME}
+                                className="me-2"
+                                aria-label="Search"
+                            />
+                            <Button variant="outline-success">
+                                <img src={search} alt='search'/>
+                            </Button>
+                        </Form>
                     </div>
                 </div>
             </div>

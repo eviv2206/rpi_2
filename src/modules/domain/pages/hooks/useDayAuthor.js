@@ -5,13 +5,13 @@ import brovka from '../../../../assets/authorsText/brovka.json';
 import byadulya from '../../../../assets/authorsText/byadulya.json';
 import dunin from '../../../../assets/authorsText/dunin.json';
 import gilevich from '../../../../assets/authorsText/gilevich.json';
-import picBarschevskiy from '../../../../assets/images/barschevskiy.png';
-import picBogushevich from '../../../../assets/images/bogushevich.png';
-import picBorodulin from '../../../../assets/images/borodulin.png';
-import picBrovka from '../../../../assets/images/brovka.png';
-import picByadulya from '../../../../assets/images/byadulya.png';
-import picDunin from '../../../../assets/images/dunin.png';
-import picGilevich from '../../../../assets/images/gilevich.png';
+import picBarschevskiy from '../../../../assets/images/authors/barschevskiy.png';
+import picBogushevich from '../../../../assets/images/authors/bogushevich.png';
+import picBorodulin from '../../../../assets/images/authors/borodulin.png';
+import picBrovka from '../../../../assets/images/authors/brovka.png';
+import picByadulya from '../../../../assets/images/authors/byadulya.png';
+import picDunin from '../../../../assets/images/authors/dunin.png';
+import picGilevich from '../../../../assets/images/authors/gilevich.png';
 
 
 const useDayAuthor = () => {
