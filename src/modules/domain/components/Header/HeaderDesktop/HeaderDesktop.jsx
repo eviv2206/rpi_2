@@ -23,7 +23,7 @@ const HeaderDesktop = () => {
                     <div className={s.Container_centerBox}>
                         <ul className={s.List}>
                             <li><Link to='/domain'>{LABEL_MAIN}</Link></li>
-                            <li><a href='#'>{LABEL_LIST_AUTHORS}</a></li>
+                            <li><Link to='' href='#'>{LABEL_LIST_AUTHORS}</Link></li>
                         </ul>
                     </div>
                     <div className={

@@ -9,9 +9,10 @@
     }
     &_beginBox{
         text-align: center;
-        font-size: $font-size-medium-16;
-        font-weight: 600;
+        font-size: $font-size-xlarge-32;
+        font-weight: 800;
         width: 15%;
+        letter-spacing: -0.12em;
     }
 
     &_endBox{
