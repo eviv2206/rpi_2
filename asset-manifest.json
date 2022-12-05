@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rpi_2/static/css/main.73b2a598.css",
+    "main.js": "/rpi_2/static/js/main.dcf7cd59.js",
+    "static/media/borodulin.png": "/rpi_2/static/media/borodulin.687e34e2b8468e52002d.png",
+    "static/media/byadulya.png": "/rpi_2/static/media/byadulya.1e30449ec9f45f1dc3fe.png",
+    "static/media/brovka.png": "/rpi_2/static/media/brovka.41c73b400f1103cf750b.png",
+    "static/media/gilevich.png": "/rpi_2/static/media/gilevich.17b2395c7f05b5154c1e.png",
+    "static/media/bogushevich.png": "/rpi_2/static/media/bogushevich.9a8bdd882a5023e6e923.png",
+    "static/media/dunin.png": "/rpi_2/static/media/dunin.0048882d2990e8b9db47.png",
+    "static/media/barschevskiy.png": "/rpi_2/static/media/barschevskiy.2de9e2ae4419d9e60c44.png",
+    "index.html": "/rpi_2/index.html",
+    "static/media/search.svg": "/rpi_2/static/media/search.7d33122482806b1cd71d95cb4b5b1f6e.svg",
+    "main.73b2a598.css.map": "/rpi_2/static/css/main.73b2a598.css.map",
+    "main.dcf7cd59.js.map": "/rpi_2/static/js/main.dcf7cd59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73b2a598.css",
+    "static/js/main.dcf7cd59.js"
+  ]
+}
