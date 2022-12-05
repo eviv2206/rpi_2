@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import classNames from 'classnames';
 import s from './HeaderDesktop.module.scss';
 import HEADER_DICTIONARY from '../Header.dictionary';
 import { Link } from 'react-router-dom';
