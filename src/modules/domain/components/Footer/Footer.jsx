@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.module.scss';
-import s from './Footer.module.scss''
+import s from './Footer.module.scss';
 import evivIcon from '../../../../assets/images/evivIcon.png';
 import l9sikIcon from '../../../../assets/images/l9sikIcon.png';
 import stepanLushIcon from '../../../../assets/images/stepanLushIcon.png';
