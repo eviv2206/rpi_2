@@ -13,7 +13,6 @@ import picByadulya from '../../../../assets/authorsImages/byadulya.png';
 import picDunin from '../../../../assets/authorsImages/dunin.png';
 import picGilevich from '../../../../assets/authorsImages/gilevich.png';
 
-
 const useDayAuthor = () => {
     const authorsArr = [
         { author: barschevskiy, pic: picBarschevskiy },
