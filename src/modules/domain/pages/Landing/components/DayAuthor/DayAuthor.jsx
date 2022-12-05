@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
 const DayAuthor = (props) => {
-    const { isDesktopWidth, isMobileWidth, isMobileHeight } = useSignInMediaQuery();
+    const { isDesktopWidth, isMobileHeight, isMobileWidth } = useSignInMediaQuery();
 
     const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const DayAuthor = (props) => {
     return (
         <>
             {isDesktopWidth && !isMobileHeight && <DayAuthorDesktop man={props.man} onClick={onClick}/>}
-            {isMobileWidth && <DayAuthorMobile man={props.man} onClick={onClick}/>}
+            {(isMobileWidth || isMobileHeight) && <DayAuthorMobile man={props.man} onClick={onClick}/>}
         </>
     );
 };
