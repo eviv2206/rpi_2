@@ -11,7 +11,13 @@ const DayAuthor = (props) => {
     const navigate = useNavigate();
 
     const onClick = () => {
-        navigate('/domain/author');
+        navigate({
+            pathname: '/domain/author/',
+            search: `?surname=${props.man.author.surnameEn}`
+        }, {
+            state: props.man,
+            replace: true,
+        });
     };
 
     return (

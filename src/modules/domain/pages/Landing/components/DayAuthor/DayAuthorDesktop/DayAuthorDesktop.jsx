@@ -10,8 +10,8 @@ const {
 const DayAuthorDesktop = (props) => {
     return (
         <>
-            <div className={s.Container} onClick={props.onClick}>
-                <form className={s.Form}>
+            <div className={s.Container}>
+                <form className={s.Form} onClick={props.onClick}>
                     <div className={s.Form_label}>
                         <h2>{LABEL_TEXT}</h2>
                     </div>
