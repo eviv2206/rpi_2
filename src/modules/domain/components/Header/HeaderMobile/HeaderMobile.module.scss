@@ -60,8 +60,9 @@
 }
 
 .List {
+    text-align: center;
     font-size: $font-size-xmedium-18;
-    :visited{
+    :visited, :hover{
         text-underline-offset: 4px;
         text-decoration-color: $brown;
         text-decoration: underline 1.8px solid $brown;
