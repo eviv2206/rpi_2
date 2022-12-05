@@ -1,10 +1,10 @@
 import React from 'react';
-import './Footer.module.scss';
+import s from './Footer.module.scss';
 
 const Footer = () => {
     return (
         <>
-            <div>FOOTER</div>
+            <div className={s.Advertisment}>Здесь могла быть ваша реклама</div>
         </>
     );
 };
