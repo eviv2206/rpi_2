@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import s from './HeaderDesktop.module.scss';
 import HEADER_DICTIONARY from '../Header.dictionary';
@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import search from '../../../../../assets/images/search.svg';
+import PropTypes from 'prop-types';
 
 const {
     LABEL_LOGO,
@@ -14,7 +15,12 @@ const {
     LABEL_INPUT_SURNAME,
 } = HEADER_DICTIONARY;
 
-const HeaderDesktop = () => {
+
+
+const HeaderDesktop = (props) => {
+    const [ value, setValue ] = useState('');
+
+
     return(
         <>
             <div>
@@ -38,9 +44,10 @@ const HeaderDesktop = () => {
                                 placeholder={LABEL_INPUT_SURNAME}
                                 className="me-2"
                                 aria-label="Search"
+                                onChange={e => setValue(e.target.value)}
                             />
                             <Button variant="outline-success">
-                                <img src={search} alt='search'/>
+                                <img src={search} alt='search' onClick={() => props.onSearchClick(value)}/>
                             </Button>
                         </Form>
                     </div>
@@ -48,6 +55,10 @@ const HeaderDesktop = () => {
             </div>
         </>
     );
+};
+
+HeaderDesktop.propTypes = {
+    onSearchClick: PropTypes.func.isRequired,
 };
 
 export default HeaderDesktop;
