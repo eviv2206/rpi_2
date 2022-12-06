@@ -10,12 +10,15 @@
     border-bottom: 1px solid $brown;
   }
 
+  &_author_pic {
+    img{
+      width: 100%;
+    }
+  }
+
   &_years_of_life {
     text-align: center;
     margin-top: 10px;
   }
 
-  YouTube{
-    width: 100%;
-  }
 }
