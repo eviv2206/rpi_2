@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import search from '../../../../../assets/images/search.svg';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 
 const {
@@ -17,7 +18,8 @@ const {
     LABEL_INPUT_SURNAME,
 } = HEADER_DICTIONARY;
 
-const HeaderMobile = () => {
+const HeaderMobile = (props) => {
+    const [ value, setValue ] = useState('');
     return(
         <>
             <Navbar collapseOnSelect expand="xl" variant='white' className={s.Container}>
@@ -36,8 +38,9 @@ const HeaderMobile = () => {
                                     placeholder={LABEL_INPUT_SURNAME}
                                     className="me-2"
                                     aria-label="Search"
+                                    onChange={e => setValue(e.target.value)}
                                 />
-                                <Button variant="outline-success">
+                                <Button variant="outline-success" onClick={() => props.onSearchClick(value)}>
                                     <img src={search} alt='search'/>
                                 </Button>
                             </Form>
@@ -47,6 +50,10 @@ const HeaderMobile = () => {
             </Navbar>
         </>
     );
+};
+
+HeaderMobile.propTypes = {
+    onSearchClick: PropTypes.func.isRequired,
 };
 
 export default HeaderMobile;
