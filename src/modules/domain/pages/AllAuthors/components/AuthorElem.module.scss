@@ -1,0 +1,10 @@
+@import '../../../../../styles/colors';
+
+.AuthorForm{
+
+  &:hover{
+    border-bottom: 1px solid $brown;
+    cursor: pointer;
+  }
+
+}
