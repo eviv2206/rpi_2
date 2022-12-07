@@ -8,7 +8,7 @@ import picKolas from '../../../../assets/authorsImages/kolas.png';
 import picBogdanovich from '../../../../assets/authorsImages/bogdanovich.png';
 import picBorodulin from '../../../../assets/authorsImages/borodulin.png';
 import picByadulya from '../../../../assets/authorsImages/byadulya.png';
-import NOTHING_FOUND from '../../../../assets/authorsText/nothingfound.json';
+//import NOTHING_FOUND from '../../../../assets/authorsText/nothingfound.json';
 
 const useAuthors = () => {
     return [
@@ -17,7 +17,6 @@ const useAuthors = () => {
         { author: byadulya, pic: picByadulya },
         { author: kolas, pic: picKolas },
         { author: kupala, pic: picKupala },
-        { author: NOTHING_FOUND, pic: undefined }
     ];
 };
 

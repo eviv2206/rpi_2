@@ -10,10 +10,10 @@ const Domain = () => {
     return(<>
         <Header/>
         <Routes>
+            <Route path='/' element={<Navigate to={'home'}/>}/>
             <Route path='/home' element={<Landing/>}/>
             <Route path='/author' element={<Author/>}/>
             <Route path='/nothing-found' element={<NothingFound/>}/>
-            <Route path='/' element={<Navigate to={'home'}/>}/>
         </Routes>
         <Footer/>
     </>

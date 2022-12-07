@@ -4,7 +4,8 @@ import HeaderDesktop from './HeaderDesktop';
 import HeaderMobile from './HeaderMobile';
 import useSearch from '../../pages/hooks/useSearch';
 import { useNavigate } from 'react-router-dom';
-import NOTHING_FOUND from '../../../../assets/authorsText/nothingfound.json';
+//import NOTHING_FOUND from '../../../../assets/authorsText/nothingfound.json';
+//import { type } from '@testing-library/user-event/dist/type';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Header = () => {
 
     const onSearchClick = (surname) => {
         const destAuthor = useSearch(surname);
-        if (destAuthor.author != NOTHING_FOUND){
+        if (typeof(destAuthor) !== 'undefined'){
             navigate({
                 pathname: '/domain/author/',
                 search: `?surname=${destAuthor.author.surnameEn}`
