@@ -38,6 +38,10 @@ const HeaderDesktop = (props) => {
                             s.Container
                         )
                     }>
+                        <ul className={s.LanguageSelector}>
+                            <li><Link>Русский</Link></li>
+                            <li><Link>Английский</Link></li>
+                        </ul>
                         <Form className="d-flex">
                             <Form.Control
                                 type="search"

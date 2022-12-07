@@ -19,7 +19,7 @@
     }
     &_centerBox{
         font-size: $font-size-xmedium-18;
-        width: 50%;
+        width: 40%;
         .List{
             display: flex;
             list-style: none;
@@ -30,7 +30,7 @@
     }
     &_endBox{
         font-size: $font-size-xmedium-18;
-        width: 25%;
+        width: 40%;
         
         &_divider{
             text-align: center;
@@ -54,5 +54,21 @@ button{
     img{
         height: 25px;
         width: 25px;
+    }
+}
+
+.LanguageSelector{
+    width: 70%;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    li {
+        margin-right: 5%;
+    }
+    li a:hover{
+        text-underline-offset: 4px;
+        text-decoration-color: $brown;
+        text-decoration: underline 1.8px solid $brown;
     }
 }

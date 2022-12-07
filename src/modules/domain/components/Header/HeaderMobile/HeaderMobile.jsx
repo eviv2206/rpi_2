@@ -26,7 +26,13 @@ const HeaderMobile = (props) => {
                 <Navbar.Brand href="#home">
                     <div className={s.Container_beginBox}><Link to='/domain'>{LABEL_LOGO}</Link></div>
                 </Navbar.Brand>
-                <Navbar.Toggle className={s.Toggle} aria-controls="responsive-navbar-nav"/>
+                <div className={s.Container_midBox}>
+                    <ul className={s.LanguageSelector}>
+                        <li><Link>Русский</Link></li>
+                        <li><Link>Английский</Link></li>
+                    </ul>
+                    <Navbar.Toggle className={s.Toggle} aria-controls="responsive-navbar-nav"/>
+                </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link className={s.List}><Link to='/domain'>{LABEL_MAIN}</Link></Nav.Link>
