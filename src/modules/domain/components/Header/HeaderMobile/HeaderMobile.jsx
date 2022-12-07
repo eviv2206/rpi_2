@@ -30,7 +30,7 @@ const HeaderMobile = (props) => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link className={s.List}><Link to='/domain'>{LABEL_MAIN}</Link></Nav.Link>
-                        <Nav.Link className={s.List}><Link to=''>{LABEL_LIST_AUTHORS}</Link></Nav.Link>
+                        <Nav.Link className={s.List}><Link to='/domain/authors'>{LABEL_LIST_AUTHORS}</Link></Nav.Link>
                         <Nav.Link className={s.List}>
                             <Form className="d-flex">
                                 <Form.Control
