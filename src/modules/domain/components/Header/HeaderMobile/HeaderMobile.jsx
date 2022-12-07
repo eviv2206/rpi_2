@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import s from './HeaderMobile.module.scss';
 import HEADER_DICTIONARY from '../Header.dictionary';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import search from '../../../../../assets/images/search.svg';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import s from './HeaderMobile.module.scss';
 
 
 const {
@@ -40,9 +40,11 @@ const HeaderMobile = (props) => {
                                     aria-label="Search"
                                     onChange={e => setValue(e.target.value)}
                                 />
-                                <Button variant="outline-success" onClick={() => props.onSearchClick(value)}>
-                                    <img src={search} alt='search'/>
-                                </Button>
+                                <div className={s.SearchButton}>
+                                    <Button variant="outline-success" onClick={() => props.onSearchClick(value)}>
+                                        <img src={search} alt='search'/>
+                                    </Button>
+                                </div>
                             </Form>
                         </Nav.Link>
                     </Nav>
