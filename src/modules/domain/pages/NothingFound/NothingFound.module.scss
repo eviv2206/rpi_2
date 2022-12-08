@@ -1,10 +1,11 @@
-.NothingFoundField {
-    
-    width: 600px;
-    height: 60vh;
-    margin: 5em auto;
-    padding: 2em;
-    background-color: #fdfdff;
-    border-radius: 0.5em;
-    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+.Container {
+    height: calc(98vh - 13vh - 13vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_NothingFoundField {
+
+        margin: 5em auto;
+        padding: 2em;
+    }
 }
