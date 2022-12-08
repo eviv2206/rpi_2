@@ -66,9 +66,11 @@ button{
     li {
         margin-right: 5%;
     }
-    li a:hover{
-        text-underline-offset: 4px;
-        text-decoration-color: $brown;
-        text-decoration: underline 1.8px solid $brown;
+    img{
+        width: 25px;
+    }
+
+    img:hover{
+        cursor: pointer;
     }
 }
