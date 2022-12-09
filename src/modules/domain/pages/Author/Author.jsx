@@ -1,11 +1,15 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import s from './Author.module.scss';
 import 'react-vertical-timeline-component/style.min.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Map, Placemark, YMaps } from '@pbe/react-yandex-maps';
 import YouTube from 'react-youtube';
-import s from './Author.module.scss';
 import color from '../../../../styles/_colors.scss';
+import { Carousel } from 'react-responsive-carousel';
+
+const GALLERY_LABEL = 'Галерея';
 
 const Author = () => {
     const man = useLocation().state;
@@ -39,6 +43,14 @@ const Author = () => {
                         </VerticalTimelineElement>
                     ))}
                 </VerticalTimeline>
+                <div>
+                    <h2>{GALLERY_LABEL}</h2>
+                </div>
+                <Carousel width='300px' autoPlay='true'>
+                    {man.gallery.map((image, index) => (
+                        <div key={index}><img src={image}/></div>
+                    ))}
+                </Carousel>
                 <YouTube videoId={man.author.youtube} />
                 <YMaps>
                     <Map defaultState={defaultState} modules={yandexModules} width='100%'>
