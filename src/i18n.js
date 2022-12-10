@@ -28,8 +28,8 @@ i18n
         debug: true,
         // Распознавание и кэширование языковых кук
         detection: {
-            order: ['queryString', 'cookie'],
-            cache: ['cookie']
+            order: ['localStorage', 'cookie'],
+            cache: ['localStorage', 'cookie']
         },
         interpolation: {
             escapeValue: false
