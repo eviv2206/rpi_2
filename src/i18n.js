@@ -35,7 +35,8 @@ i18n
             escapeValue: false
         },
         backend: {
-            localPath: '/rpi_2/assets/locales/{{lng}}/{{ru}}.json',
+            localPath: '/assets/locales/{{lng}}/{{ru}}.json',
+
         }
     });
 
