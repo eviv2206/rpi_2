@@ -1,5 +1,0 @@
-const HEADER_DICTIONARY = {
-    LABEL_LOGO: 'BELAUTHORS',
-};
-
-export default HEADER_DICTIONARY;

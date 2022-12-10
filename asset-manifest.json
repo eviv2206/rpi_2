@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/rpi_2/static/css/main.25a1b95e.css",
+    "main.js": "/rpi_2/static/js/main.2ab74f70.js",
+    "static/media/venok.png": "/rpi_2/static/media/venok.448bf0dfff6273929da9.png",
+    "static/media/kolas.png": "/rpi_2/static/media/kolas.1ef2daa36f5202ed2d09.png",
+    "static/media/koshki.png": "/rpi_2/static/media/koshki.cd2f2f4912c5a1d67f14.png",
+    "static/media/utochka.png": "/rpi_2/static/media/utochka.1e5eb2cef4734f7554bb.png",
+    "static/media/kupala.png": "/rpi_2/static/media/kupala.630acccd83770a28e02f.png",
+    "static/media/tastament.png": "/rpi_2/static/media/tastament.5e981c7b661437ae6a5c.png",
+    "static/media/borodulin.png": "/rpi_2/static/media/borodulin.687e34e2b8468e52002d.png",
+    "static/media/byadulya.png": "/rpi_2/static/media/byadulya.1e30449ec9f45f1dc3fe.png",
+    "static/media/maladzik.png": "/rpi_2/static/media/maladzik.77ece4c776f58e279dbe.png",
+    "static/media/tryasina.png": "/rpi_2/static/media/tryasina.bf37cb6e21c558a74b59.png",
+    "static/media/rostani.png": "/rpi_2/static/media/rostani.7b59676025f4f6b8272b.png",
+    "static/media/pyarschenok.png": "/rpi_2/static/media/pyarschenok.274b4d25ef3cb4460b1a.png",
+    "static/media/tuteishia.png": "/rpi_2/static/media/tuteishia.fc4c51e555de32fadb67.png",
+    "static/media/spatkanne.png": "/rpi_2/static/media/spatkanne.692c8a6655c41266cb4b.png",
+    "static/media/salavey.png": "/rpi_2/static/media/salavey.dba9648e5c9a147ae490.png",
+    "static/media/zemlya.png": "/rpi_2/static/media/zemlya.3e713d9d2e02aeb458d4.png",
+    "static/media/bogdanovich.png": "/rpi_2/static/media/bogdanovich.301e14a2ed789bac48e4.png",
+    "static/media/zorka.png": "/rpi_2/static/media/zorka.5b62b626668339dd759d.png",
+    "static/media/vershi.png": "/rpi_2/static/media/vershi.0d5f6714124d2e7ec245.png",
+    "static/media/paulinka.png": "/rpi_2/static/media/paulinka.ff0d9f18892a535fdc4d.png",
+    "static/media/usFlag.svg": "/rpi_2/static/media/usFlag.6bfa3fc5dead5ace487f6cc7b35e269b.svg",
+    "static/media/russianFlag.svg": "/rpi_2/static/media/russianFlag.b011ecd6d2f81948e3363e7b06053e64.svg",
+    "index.html": "/rpi_2/index.html",
+    "static/media/getFetch.cjs": "/rpi_2/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "static/media/search.svg": "/rpi_2/static/media/search.7d33122482806b1cd71d95cb4b5b1f6e.svg",
+    "main.25a1b95e.css.map": "/rpi_2/static/css/main.25a1b95e.css.map",
+    "main.2ab74f70.js.map": "/rpi_2/static/js/main.2ab74f70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25a1b95e.css",
+    "static/js/main.2ab74f70.js"
+  ]
+}
