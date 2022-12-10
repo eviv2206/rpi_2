@@ -34,6 +34,9 @@ i18n
         interpolation: {
             escapeValue: false
         },
+        backend: {
+            localPath: '/rpi_2/assets/locales/{{lng}}/{{ns}}.json',
+        }
     });
 
 export default i18n;
