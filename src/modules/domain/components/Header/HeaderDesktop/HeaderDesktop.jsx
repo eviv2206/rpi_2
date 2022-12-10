@@ -29,11 +29,17 @@ const HeaderDesktop = (props) => {
         <>
             <div>
                 <div className={s.Container}>
-                    <div className={s.Container_beginBox}><Link to="/domain">{LABEL_LOGO}</Link></div>
+                    <div className={s.Container_beginBox}>
+                        <Link to="/domain">{LABEL_LOGO}</Link>
+                    </div>
                     <div className={s.Container_centerBox}>
                         <ul className={s.List}>
-                            <li><Link to="/domain">{t('main_title')}</Link></li>
-                            <li><Link to="/domain/authors">{t('all_authors_title')}</Link></li>
+                            <li>
+                                <Link to="/domain">{t('main_title')}</Link>
+                            </li>
+                            <li>
+                                <Link to="/domain/authors">{t('all_authors_title')}</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className={
@@ -43,8 +49,19 @@ const HeaderDesktop = (props) => {
                         )
                     }>
                         <ul className={s.LanguageSelector}>
-                            <li><img src={russianFlag} onClick={() => changeLanguage('ru')} alt='russian'/></li>
-                            <li><img src={usFlag} onClick={() => changeLanguage('en')} alt='us'/></li>
+                            <li>
+                                <img
+                                    src={russianFlag}
+                                    onClick={() => changeLanguage('ru')}
+                                    alt="russian"
+                                />
+                            </li>
+                            <li>
+                                <img src={usFlag}
+                                    onClick={() => changeLanguage('en')}
+                                    alt="us"
+                                />
+                            </li>
                         </ul>
                         <Form className="d-flex">
                             <Form.Control
@@ -55,7 +72,11 @@ const HeaderDesktop = (props) => {
                                 onChange={e => setValue(e.target.value)}
                             />
                             <Button variant="outline-success">
-                                <img src={search} alt="search" onClick={() => props.onSearchClick(value)}/>
+                                <img
+                                    src={search}
+                                    alt="search"
+                                    onClick={() => props.onSearchClick(value)}
+                                />
                             </Button>
                         </Form>
                     </div>

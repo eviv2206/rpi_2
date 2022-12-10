@@ -4,7 +4,7 @@ import useDayAuthor from '../hooks/useDayAuthor';
 
 const Landing = () => {
     const man = useDayAuthor();
-    return(
+    return (
         <>
             <DayAuthor man={man}/>
         </>

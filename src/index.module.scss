@@ -13,46 +13,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $black;
   background-color: $white;
+
   h1 {
     font-size: 144px;
     font-weight: bold;
   }
+
   h2 {
     font-size: 36px;
     font-weight: 600;
   }
+
   h3 {
     font-size: 32px;
   }
+
   p {
     font-size: 18px;
   }
+
   a {
     outline: none;
     text-decoration: none;
   }
-  
+
   a:link {
     color: inherit;
   }
-  
+
   a:visited {
     color: inherit;
   }
-  
+
   a:focus {
     color: inherit;
   }
-  
+
   a:hover {
     color: inherit;
   }
-  
+
   a:active {
     color: inherit;
   }
 
-  li, ul{
+  li, ul {
     margin: 0;
   }
 }
