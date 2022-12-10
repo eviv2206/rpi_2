@@ -33,10 +33,6 @@ i18n
         },
         interpolation: {
             escapeValue: false
-        },
-        backend: {
-            localPath: '/assets/locales/{{lng}}/{{ru}}.json',
-
         }
     });
 
