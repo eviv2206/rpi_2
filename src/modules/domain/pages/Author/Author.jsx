@@ -66,7 +66,10 @@ const Author = () => {
                         ))
                     }
                 </Carousel>
-                <YouTube videoId={man.author.youtube}/>
+                <YouTube 
+                    className={s.Container_youtube} 
+                    videoId={man.author.youtube}
+                />
                 <YMaps>
                     <Map defaultState={defaultState} modules={yandexModules} width="100%">
                         {
