@@ -1,7 +1,7 @@
 {
   "name": "rpi_2",
   "version": "0.1.0",
-  "homepage": "https://eviv2206.github.io/rpi_2",
+  "homepage": "https://eviv2206.github.io/rpi_2/",
   "private": true,
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.2",
