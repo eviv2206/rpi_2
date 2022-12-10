@@ -1,4 +1,5 @@
 {
-    "main_page": "Главная",
-    "author_list": "Список авторов"
+  "main_title": "Главная",
+  "all_authors_title": "Список авторов",
+  "place_holder_input": "Фамилия..."
 }

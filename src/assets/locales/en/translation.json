@@ -1,4 +1,5 @@
 {
-    "main_page": "Main",
-    "author_list": "Author list"
+  "main_title": "Main",
+  "all_authors_title": "List of authors",
+  "place_holder_input": "Surname..."
 }
