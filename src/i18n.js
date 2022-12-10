@@ -23,7 +23,7 @@ i18n
             escapeValue: false
         },
         backend: {
-            loadPath: '/rpi_2/locales/{{lng}}/{{ns}}.json',
+            loadPath: '/locales/{{lng}}/{{ns}}.json',
         }
     });
 
