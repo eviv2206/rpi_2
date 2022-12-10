@@ -1,5 +1,4 @@
 import useAuthors from './useAuthors';
-//import NOTHING_FOUND from './../../../../assets/authorsText/nothingfound.json';
 
 const useSearch = (surname) => {
     const authorsArr = useAuthors();

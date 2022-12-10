@@ -1,11 +1,12 @@
 .Container {
-    height: calc(98vh - 13vh - 13vh);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &_NothingFoundField {
+  height: calc(98vh - 13vh - 13vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-        margin: 5em auto;
-        padding: 2em;
-    }
+  &_NothingFoundField {
+
+    margin: 5em auto;
+    padding: 2em;
+  }
 }

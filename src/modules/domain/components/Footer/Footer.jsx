@@ -25,15 +25,15 @@ const Footer = () => {
                 </div>
                 <div className={s.Boxes}>
                     <div className={s.Boxes_box_collaborator}>
-                        <img src={evivIcon} alt='evivIcon'/>
+                        <img src={evivIcon} alt="evivIcon"/>
                         <a href={LINK_EVIV}>{LABEL_EVIV}</a>
                     </div>
                     <div className={s.Boxes_box_collaborator}>
-                        <img src={l9sikIcon} alt='l9sikIcon'/>
+                        <img src={l9sikIcon} alt="l9sikIcon"/>
                         <a href={LINK_L9SIK}>{LABEL_L9SIK}</a>
                     </div>
                     <div className={s.Boxes_box_collaborator}>
-                        <img src={stepanLushIcon} alt='StepanLushIcon'/>
+                        <img src={stepanLushIcon} alt="StepanLushIcon"/>
                         <a href={LINK_STEPAN_LUSH}>{LABEL_STEPAN_LUSH}</a>
                     </div>
                 </div>

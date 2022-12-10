@@ -17,8 +17,12 @@ const AuthorElem = (props) => {
 
     return (
         <form onClick={onClick} className={s.AuthorForm}>
-            <div><h2>{props.man.author.firstName} {props.man.author.surname}</h2></div>
-            <div><p>{props.man.author.birthDate} - {props.man.author.deadDate}</p></div>
+            <div>
+                <h2>{props.man.author.firstName} {props.man.author.surname}</h2>
+            </div>
+            <div>
+                <p>{props.man.author.birthDate} - {props.man.author.deadDate}</p>
+            </div>
         </form>
     );
 };

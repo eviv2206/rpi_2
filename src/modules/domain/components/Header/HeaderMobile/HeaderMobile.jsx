@@ -29,19 +29,28 @@ const HeaderMobile = (props) => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="xl" variant="white" className={s.Container}>
+            <Navbar
+                collapseOnSelect
+                expand="xl"
+                variant="white"
+                className={s.Container}>
                 <Navbar.Brand href="#home">
-                    <div className={s.Container_beginBox}><Link to="/domain">{LABEL_LOGO}</Link></div>
+                    <div className={s.Container_beginBox}>
+                        <Link to="/domain">{LABEL_LOGO}</Link>
+                    </div>
                 </Navbar.Brand>
                 <div className={s.Container_midBox}>
-                    <Navbar.Toggle className={s.Toggle} aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Toggle className={s.Container_toggle} aria-controls="responsive-navbar-nav"/>
                 </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link className={s.List}><Link to="/domain">{t('main_title')}</Link></Nav.Link>
-                        <Nav.Link className={s.List}><Link
-                            to="/domain/authors">{t('all_authors_title')}</Link></Nav.Link>
-                        <Nav.Link className={s.List}>
+                        <Nav.Link className={s.Container_list}>
+                            <Link to="/domain">{t('main_title')}</Link>
+                        </Nav.Link>
+                        <Nav.Link className={s.Container_list}>
+                            <Link to="/domain/authors">{t('all_authors_title')}</Link>
+                        </Nav.Link>
+                        <Nav.Link className={s.Container_list}>
                             <Form className="d-flex">
                                 <Form.Control
                                     type="search"
@@ -50,18 +59,30 @@ const HeaderMobile = (props) => {
                                     aria-label="Search"
                                     onChange={e => setValue(e.target.value)}
                                 />
-                                <div className={s.SearchButton}>
-                                    <Button variant="outline-success" onClick={() => props.onSearchClick(value)}>
+                                <div>
+                                    <Button
+                                        variant="outline-success"
+                                        onClick={() => props.onSearchClick(value)}>
                                         <img src={search} alt="search"/>
                                     </Button>
                                 </div>
                             </Form>
                         </Nav.Link>
-                        <div className={s.LanguageSelector}>
-                            <Nav.Item><img onClick={() => changeLanguage('ru')} src={russianFlag}
-                                alt="russian"/></Nav.Item>
-                            <Nav.Item><img onClick={() => changeLanguage('en')}
-                                src={usFlag} alt="english"/></Nav.Item>
+                        <div className={s.Container_languageSelector}>
+                            <Nav.Item>
+                                <img
+                                    onClick={() => changeLanguage('ru')}
+                                    src={russianFlag}
+                                    alt="russian"
+                                />
+                            </Nav.Item>
+                            <Nav.Item>
+                                <img
+                                    onClick={() => changeLanguage('en')}
+                                    src={usFlag}
+                                    alt="english"
+                                />
+                            </Nav.Item>
                         </div>
                     </Nav>
                 </Navbar.Collapse>

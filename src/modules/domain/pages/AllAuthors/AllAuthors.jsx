@@ -12,9 +12,11 @@ const AllAuthors = () => {
             <div className={s.Container_Authors_label}>
                 <h2>{ALL_AUTHORS_LABEL}</h2>
             </div>
-            {allAuthors.map((man) => (
-                <AuthorElem key={man.author.id} man={man}/>
-            ))}
+            {
+                allAuthors.map((man) => (
+                    <AuthorElem key={man.author.id} man={man}/>
+                ))
+            }
         </div>
     );
 };
