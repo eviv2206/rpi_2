@@ -21,6 +21,9 @@ i18n
         },
         interpolation: {
             escapeValue: false
+        },
+        backend: {
+            loadPath: '/rpi_2/locales/{{lng}}/{{ns}}.json',
         }
     });
 
